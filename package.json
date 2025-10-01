@@ -3,13 +3,19 @@
   "version": "1.0.0",
   "description": "Creating YOUTUBE Backend ",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon src/index.js"
   },
   "keywords": [
     "Node.js",
     "Express.js"
   ],
   "author": "Abhay",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "nodemon": "^3.1.10",
+    "prettier": "^3.6.2"
+  }
 }
