@@ -1,3 +1,4 @@
+//For sending error with node.js error class 
 class ApiError extends Error {
   constructor(statusCode, message = "Something went wrong", errors = [], stack = ''){
     super(message)
