@@ -247,3 +247,4 @@ export const updateUserCover =  asynHandler(async(req, res)=>{
   const user =  await User.findByIdAndUpdate(req.user?._id, {$set:{coverImage: coverImage.url}}, {new: true}).select('-password')
   return res.status(200).json(new ApiResponse(200, user, 'Cover image update'))
 })
+//
